@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Plan — Corbin Probasco Portfolio</title>
+    <link rel="stylesheet" href="site-plan.css">
+</head>
+<body>
+    <header>
+        <h1>Site Plan</h1>
+        <p>Corbin Probasco — Portfolio Website</p>
+        <p>WDD131 Personal Site Project</p>
+    </header>
+
+    <h2>Purpose</h2>
+    <p>
+        This portfolio serves as a professional showcase for my embedded systems
+        and software engineering projects through video demos, a downloadable resume,
+        and a contact form. The goal is to demonstrate technical competence through
+        tangible project outcomes and provide hiring managers with a clear picture
+        of my skills and experience.
+    </p>
+
+    <h2>Audience</h2>
+    <ul>
+        <li>Hiring managers and recruiters in embedded systems and defense</li>
+        <li>Students and co-workers </li>
+        
+    <h2>Color Scheme</h2>
+    <div class="color-swatches">
+        <div class="swatch">
+            <div class="color-block" style="background: #F5F5F5; border-bottom: 1px solid #E1E4E8;"></div>
+            <div class="color-label">Primary BG<br>#F5F5F5</div>
+        </div>
+        <div class="swatch">
+            <div class="color-block" style="background: #FFFFFF; border-bottom: 1px solid #E1E4E8;"></div>
+            <div class="color-label">Secondary BG<br>#FFFFFF</div>
+        </div>
+        <div class="swatch">
+            <div class="color-block" style="background: #1A1A2E;"></div>
+            <div class="color-label">Primary Text<br>#1A1A2E</div>
+        </div>
+        <div class="swatch">
+            <div class="color-block" style="background: #6C757D;"></div>
+            <div class="color-label">Secondary Text<br>#6C757D</div>
+        </div>
+        <div class="swatch">
+            <div class="color-block" style="background: #4E9A06;"></div>
+            <div class="color-label">Accent<br>#4E9A06</div>
+        </div>
+        <div class="swatch">
+            <div class="color-block" style="background: #73D216;"></div>
+            <div class="color-label">Accent Hover<br>#73D216</div>
+        </div>
+        <div class="swatch">
+            <div class="color-block" style="background: #0D1117;"></div>
+            <div class="color-label">Dark Accent<br>#0D1117</div>
+        </div>
+        <div class="swatch">
+            <div class="color-block" style="background: #E1E4E8;"></div>
+            <div class="color-label">Border<br>#E1E4E8</div>
+        </div>
+    </div>
+    <ul>
+        <li>Primary BG — #F5F5F5 — Page background</li>
+        <li>Secondary BG — #FFFFFF — Sections</li>
+        <li>Primary Text — #1A1A2E — Body text, headings</li>
+        <li>Secondary Text — #6C757D — Captions, meta info</li>
+        <li>Accent — #4E9A06 — Links, buttons, highlights</li>
+        <li>Accent Hover — #73D216 — Hover states</li>
+        <li>Dark Accent — #0D1117 — Header/footer, code blocks</li>
+        <li>Border — #E1E4E8 — Dividers, borders</li>
+    </ul>
+
+    <h2>Fonts</h2>
+    <p>
+        The site uses the system <code>monospace</code> font stack exclusively.
+        This matches the XFCE terminal environment and reinforces the terminal-prompt
+        style of the logo. No external fonts are loaded.
+    </p>
+    <ul>
+        <li>h1 — 2em, bold</li>
+        <li>h2 — 1.5em, bold</li>
+        <li>h3 — 1.25em, bold</li>
+        <li>Body — 1em, normal</li>
+        <li>Line-height — 1.6</li>
+    </ul>
+
+    <h2>Logo</h2>
+    <img src="../images/corbinpro-small.png" alt="corbinpro small logo">
+    <img src="../images/corbinpro.png" alt="corbinpro terminal logo">
+    <img src="../images/corbinpro-wide.png" alt="corbinpro wide banner">
+    <img src="../images/corbinpro-extra-wide.png" alt="corbinpro extra wide banner">
+
+    <h2>Navigation</h2>
+    <p>
+        Persistent top navigation bar across all pages. Logo on the left,
+        nav links on the right.
+    </p>
+    <p>Home — Projects — Resume — Contact</p>
+    <p>Footer on all pages includes email link and LinkedIn profile link.</p>
+
+    <h2>Dynamic Elements (JavaScript)</h2>
+    <p>
+        Four JavaScript features covering required concepts: multiple functions,
+        DOM interaction, conditionals, objects, arrays, and array methods.
+    </p>
+
+    <h3>1. Project Filter (Projects page)</h3>
+    <p>
+        An array of project objects with category properties. Uses
+        <code>filter()</code> to show projects by category (All, Embedded, CV,
+        Automation). Dynamically renders filtered results to the DOM.
+    </p>
+
+    <h3>2. Contact Form Validation (Contact page)</h3>
+    <p>
+        <code>validateField()</code> and <code>handleSubmit()</code> functions
+        with event listeners. Uses conditionals to check required fields and
+        display DOM error messages.
+    </p>
+
+    <h3>3. Theme Toggle (All pages)</h3>
+    <p>
+        Light/dark mode toggle using CSS custom properties. Stores preference in
+        <code>localStorage</code>. Uses an object for theme configuration
+        (colors, icon states).
+    </p>
+
+    <h3>4. Typing Animation (Home hero)</h3>
+    <p>
+        An array of role strings ("Embedded Engineer", "Software Developer", etc.)
+        cycled with <code>setInterval</code>. Modifies DOM text content to create
+        a typewriter effect in the hero subtitle.
+    </p>
+
+    <h2>Page Content</h2>
+
+    <h3>Home</h3>
+    <ul>
+        <li>Hero section: logo, name, typing subtitle animation, tagline</li>
+        <li>Intro paragraph (3 sentences about embedded systems background)</li>
+        <li>Two featured project video embeds:
+            <ul>
+                <li>Computer-Vision Turret (C-RAM)</li>
+                <li>Drone RF Signal Detector</li>
+            </ul>
+        </li>
+        <li>"View All Projects" button linking to Projects page</li>
+    </ul>
+
+    <h3>Projects</h3>
+    <ul>
+        <li>Filter buttons: All | Embedded | CV | Automation</li>
+        <li>4 project cards in responsive grid:</li>
+    </ul>
+    <ol>
+        <li><strong>Drone RF Signal Detector</strong> — SDR-based drone detection using signal analysis</li>
+        <li><strong>Computer-Vision Turret (C-RAM)</strong> — YOLO-based object tracking with PID-controlled turret</li>
+        <li><strong>RFID Authentication Research Device</strong> — Embedded RFID security research platform</li>
+        <li><strong>Automatic G-Code Editor</strong> — Automated CNC toolpath optimization</li>
+    </ol>
+    <p>Each card includes: YouTube embed, description, and tech tags.</p>
+
+    <h3>Resume</h3>
+    <ul>
+        <li>Formatted resume sections: Education, Skills (by category), Experience, Projects</li>
+        <li>Download PDF button</li>
+    </ul>
+
+    <h3>Contact</h3>
+    <ul>
+        <li>Form fields: Name, Email, Subject (dropdown), Message, Submit button</li>
+        <li>Sidebar with direct contact info (email, LinkedIn)</li>
+    </ul>
+
+    <h2>Wireframes</h2>
+
+    <h3>Home Page</h3>
+    <img src="../images/home.png" alt="Home page wireframe">
+
+    <h3>Projects Page</h3>
+    <img src="../images/projects.png" alt="Projects page wireframe">
+
+    <h3>Resume Page</h3>
+    <img src="../images/resume.png" alt="Resume page wireframe">
+
+    <h3>Contact Page</h3>
+    <img src="../images/contact.png" alt="Contact page wireframe">
+
+    <h2>Photo / Media Placeholders</h2>
+    <ul>
+        <li>Home — Hero image — Professional headshot or workbench candid</li>
+        <li>Home — Featured videos — CV turret tracking demo, RF detector spectrum display</li>
+        <li>Projects — Card thumbnails — SDR setup, turret mechanism, RFID prototype, CNC machine</li>
+        <li>Resume — Headshot — Professional headshot</li>
+    </ul>
+
+</body>
+</html>
