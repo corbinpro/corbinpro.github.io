@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corbin Probasco</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <button id="menu-toggle" aria-label="Menu">&#9776;</button>
+        <ul id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <img src="images/corbinpro-extra-wide.png" alt="corbinpro banner" class="banner">
+    <div class="hero">
+        <div class="hero-text">
+            <img src="images/headshot-small.jpg" alt="Corbin Probasco" class="headshot">
+            <div class="hero-info">
+                <h1>Corbin Probasco</h1>
+                <p class="subtitle" id="typed-role">> _</p>
+                <p class="tagline">Building systems that interact with the real world.</p>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <p class="intro">
+            I'm an embedded systems and software engineering student at BYU-Idaho.
+            I build projects that bridge hardware and software to solve real-world problems.
+            From computer-vision turrets to RF signal detectors, I focus on systems
+            that interact with the physical world.
+        </p>
+
+        <h2>Featured Projects</h2>
+        <div class="projects">
+            <div class="project">
+                <iframe src="https://www.youtube.com/embed/" title="CV Turret Demo" allowfullscreen></iframe>
+                <h3>Computer-Vision Turret (C-RAM)</h3>
+                <p>YOLO-based object tracking with PID-controlled turret</p>
+            </div>
+            <div class="project">
+                <iframe src="https://www.youtube.com/embed/" title="RF Detector Demo" allowfullscreen></iframe>
+                <h3>Drone RF Signal Detector</h3>
+                <p>SDR-based drone detection using signal analysis</p>
+            </div>
+        </div>
+
+        <a href="projects.html" class="cta">View All Projects</a>
+    </main>
+
+    <footer>
+        <a href="mailto:corbinpro@example.com">email</a> &nbsp;|&nbsp;
+        <a href="https://linkedin.com/in/">LinkedIn</a> &nbsp;|&nbsp;
+        <button id="theme-toggle">dark mode</button>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
