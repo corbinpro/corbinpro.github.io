@@ -53,13 +53,7 @@
                 at BYU-Idaho.
             </p>
         </div>
-    </main>
-    </section>
 
-    <div class="section-gap"></div>
-
-    <section class="content-section">
-    <div class="section-inner">
         <h2>Featured Projects</h2>
         <div class="projects">
             <div class="project">
@@ -75,7 +69,7 @@
         </div>
 
         <a href="projects.html" class="cta">View All Projects</a>
-    </div>
+    </main>
     </section>
 
     <div class="section-gap"></div>
@@ -91,19 +85,25 @@
                 <div class="timeline-content">
                     <span class="timeline-date">Now - Next Step</span>
                     <h3>Bridging Mechanical and Digital</h3>
-                    <p>Graduating with a B.S. in Software Engineering and a certificate in Embedded Systems. The goal is to be an engineer who understands both mechanical and digital systems. The limitations I once hit in automation and software are now the problems I solve.</p>
+                    <p>Graduating with a B.S. in Software Engineering and a certificate in Embedded Systems. The goal is to be an engineer who understands both mechanical and digital systems. The limitations I once hit are now the problems I solve.</p>
                     <div class="timeline-skills">
                         <a href="projects.html?tag=Embedded" class="tag">Embedded</a>
                         <a href="projects.html?tag=Python" class="tag">Python</a>
                         <a href="projects.html?tag=Automation" class="tag">Automation</a>
                     </div>
                 </div>
+                <div class="timeline-img">
+                    <img src="images/timeline-14.webp" alt="Turret project" width="400" height="225" loading="lazy">
+                </div>
             </div>
 
             <div class="timeline-entry left">
                 <div class="timeline-dot"></div>
                 <div class="timeline-img">
-                    <img src="images/timeline-10.webp" alt="Embedded systems project" width="300" height="400" loading="lazy">
+                    <div class="carousel">
+                        <img src="images/timeline-10.webp" alt="Embedded systems project" class="carousel-img" width="300" height="400" loading="lazy">
+                        <img src="images/timeline-13.webp" alt="Radar project" class="carousel-img" width="400" height="225" loading="lazy">
+                    </div>
                 </div>
                 <div class="timeline-content">
                     <span class="timeline-date">2022 - Present</span>
@@ -125,11 +125,17 @@
                 <div class="timeline-content">
                     <span class="timeline-date">Age 21 - 2021</span>
                     <h3>College: Software Engineering</h3>
-                    <p>Started at BYU-Idaho studying Software Engineering. Learned to code the systems I always wanted to build. Data structures, algorithms, and system-level programming opened up new ways to solve the mechanical problems I already understood.</p>
+                    <p>Started at BYU-Idaho studying Software Engineering. Learned to code the systems I always wanted to build. Real time control, drivers, automation, and system-level programming opened up new ways to solve the mechanical problems I already understood.</p>
                     <div class="timeline-skills">
                         <a href="projects.html?tag=Python" class="tag">Python</a>
                         <a href="projects.html?tag=C" class="tag">C</a>
                         <a href="projects.html?tag=Web" class="tag">Web</a>
+                    </div>
+                </div>
+                <div class="timeline-img">
+                    <div class="carousel">
+                        <img src="images/timeline-11.webp" alt="Driver development" class="carousel-img" width="400" height="225" loading="lazy">
+                        <img src="images/timeline-12.webp" alt="Eclipse IDE" class="carousel-img" width="400" height="225" loading="lazy">
                     </div>
                 </div>
             </div>
@@ -142,7 +148,7 @@
                 <div class="timeline-content">
                     <span class="timeline-date">Age 18 - 2018</span>
                     <h3>Machinist</h3>
-                    <p>Started running CNC mills and lathes, making precision parts to +/-0.001" tolerances. Learned G-code, tool path optimization, and quality inspection. This is where I started hitting software limitations in manufacturing firsthand.</p>
+                    <p>Started running CNC mills and lathes, making precision parts to +/-0.0001" tolerances. Learned G-code, CAD, tool path optimization, and quality inspection. I learned from expert mentours, and leaders. At this point I felt i had made it far in the mechanical world but my dreams and aspirations would drove me to software and the digital world.</p>
                     <div class="timeline-skills">
                         <a href="projects.html?tag=CNC" class="tag">CNC</a>
                         <a href="projects.html?tag=Automation" class="tag">Automation</a>
@@ -155,8 +161,8 @@
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
                     <span class="timeline-date">Age 14 - 2014</span>
-                    <h3>First Truck and First Job</h3>
-                    <p>Started building my first desert race truck. Got my first job as a mechanic. Learned diagnostics, fabrication, welding, and how to figure things out with limited resources.</p>
+                    <h3>My time as a real mechanic and fabricator</h3>
+                    <p>Started building my first desert race truck. Got my first job as a mechanic, a local shop owner took me under his wing. I learned diagnostics, fabrication, welding, and became extremeley resourceful and scrappy with my resources. But i needed more, I needed to be able to manufacture at a higher level to accomplish my goals.</p>
                     <div class="timeline-skills">
                         <a href="projects.html?tag=CAD" class="tag">CAD</a>
                     </div>
@@ -211,6 +217,11 @@
         <p style="margin-top: 0.5rem;">&copy; 2026 Corbin Probasco</p>
     </footer>
     </section>
+    </div>
+
+    <div class="lightbox" id="lightbox" role="dialog" aria-label="Image viewer">
+        <img id="lightbox-img" alt="">
+        <button class="lightbox-close" id="lightbox-close" aria-label="Close">&times;</button>
     </div>
 
     <script src="scripts.js"></script>

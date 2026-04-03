@@ -170,6 +170,7 @@ h3 { font-size: 1.25em; margin-bottom: 0.75rem; }
     width: 48px;
     object-fit: contain;
     border-radius: 4px;
+    margin-right: 0.5rem;
 }
 
 #menu-toggle {
@@ -627,6 +628,41 @@ a.tag:hover { background: var(--accent2); color: #FFFFFF; }
 }
 
 .error-msg.visible { display: block; }
+
+/* === LIGHTBOX === */
+.lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.9);
+    align-items: center;
+    justify-content: center;
+}
+
+.lightbox.open {
+    display: flex;
+}
+
+.lightbox img {
+    width: 90vw;
+    height: 90vh;
+    object-fit: contain;
+    border-radius: 4px;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    background: none;
+    border: none;
+    color: #FFFFFF;
+    font-size: 2.5em;
+    cursor: pointer;
+}
+
+.lightbox-close:hover { color: var(--accent); }
 
 /* === FOOTER === */
 footer {

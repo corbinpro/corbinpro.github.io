@@ -210,7 +210,7 @@ function initCarousels() {
     });
 
     if (allCarousels.length > 0) {
-        setInterval(shuffleNext, 4000);
+        setInterval(shuffleNext, 2000);
     }
 }
 
@@ -256,11 +256,48 @@ function setPositions(images, order) {
     }
 }
 
+/* lightbox */
+function initLightbox() {
+    var lightbox = document.getElementById('lightbox');
+    var lightboxImg = document.getElementById('lightbox-img');
+    var closeBtn = document.getElementById('lightbox-close');
+    if (!lightbox || !lightboxImg) return;
+
+    /* click any timeline image to open fullscreen */
+    document.querySelectorAll('.timeline-img img').forEach(function (img) {
+        img.addEventListener('click', function () {
+            lightboxImg.src = this.src;
+            lightboxImg.alt = this.alt;
+            lightbox.classList.add('open');
+        });
+    });
+
+    /* close on button, background click, or Escape */
+    if (closeBtn) {
+        closeBtn.addEventListener('click', function () {
+            lightbox.classList.remove('open');
+        });
+    }
+
+    lightbox.addEventListener('click', function (e) {
+        if (e.target === lightbox) {
+            lightbox.classList.remove('open');
+        }
+    });
+
+    document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && lightbox.classList.contains('open')) {
+            lightbox.classList.remove('open');
+        }
+    });
+}
+
 /* init */
 document.addEventListener('DOMContentLoaded', function () {
     initThemeToggle();
     initMenuToggle();
     initHeroSpacer();
     initCarousels();
+    initLightbox();
     setTimeout(typeRole, 500);
 });
