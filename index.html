@@ -3,62 +3,215 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Corbin Probasco</title>
+    <title>Corbin Probasco - Embedded Systems Engineer</title>
+    <meta name="description" content="Portfolio of Corbin Probasco, embedded systems engineer and software developer. Projects in computer vision, RF signal detection, CNC automation, and more.">
+    <link rel="icon" href="images/corbinpro-logo-nav.png" type="image/png">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav>
-        <button id="menu-toggle" aria-label="Menu">&#9776;</button>
-        <ul id="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="resume.html">Resume</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+    <a href="#main-content" class="skip-link">Skip to content</a>
+    <div class="hero-section">
+        <img src="images/background.jpg" alt="Corbin Probasco working on electronics in the shop" class="hero-bg" width="5008" height="2089">
+        <nav class="nav-transparent" aria-label="Main navigation">
+            <h1><a href="index.html"><img src="images/corbinpro-logo-nav.png" alt="corbinpro logo" class="nav-logo">corbinpro</a></h1>
+            <div class="nav-right">
+                <button id="menu-toggle" aria-label="Menu" aria-expanded="false">&#9776;</button>
+            </div>
+            <ul id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
 
-    <img src="images/corbinpro-extra-wide.png" alt="corbinpro banner" class="banner">
-    <div class="hero">
-        <div class="hero-text">
-            <img src="images/headshot-small.jpg" alt="Corbin Probasco" class="headshot">
-            <div class="hero-info">
-                <h1>Corbin Probasco</h1>
-                <p class="subtitle" id="typed-role">> _</p>
-                <p class="tagline">Building systems that interact with the real world.</p>
+        <div class="hero">
+            <div class="hero-text">
+                <p class="hero-label">Embedded Systems Engineer Portfolio</p>
+                <h2 class="hero-name">CORBIN PROBASCO</h2>
+                <p class="subtitle" id="typed-role" aria-live="polite" aria-label="Role titles">~$ _</p>
             </div>
         </div>
     </div>
+    <div class="hero-spacer"></div>
 
-    <main>
-        <p class="intro">
-            I'm an embedded systems and software engineering student at BYU-Idaho.
-            I build projects that bridge hardware and software to solve real-world problems.
-            From computer-vision turrets to RF signal detectors, I focus on systems
-            that interact with the physical world.
-        </p>
+    <div class="content-wrapper">
 
+    <section class="content-section">
+    <main id="main-content">
+        <h2>About Me</h2>
+        <div class="intro">
+            <p>
+                I engineer embedded systems. C/C++, microcontrollers, Linux, and
+                low-level debugging are what I spend most of my time on.
+                My projects often involve computer vision, control systems, RTOS, and RF. I
+                build things that interact with the physical world.
+                Before getting into software, I was a mechanic for 10 years and a machinist for 5. I know
+                mechanical and electrical systems from the ground up, and I can contribute to both
+                the software team and the shop floor.
+                I’m finishing a B.S. in Software Engineering with an Embedded Systems certificate
+                at BYU-Idaho.
+            </p>
+        </div>
+    </main>
+    </section>
+
+    <div class="section-gap"></div>
+
+    <section class="content-section">
+    <div class="section-inner">
         <h2>Featured Projects</h2>
         <div class="projects">
             <div class="project">
-                <iframe src="https://www.youtube.com/embed/" title="CV Turret Demo" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/CiCFE5r0B4Y" title="CV Turret Demo" allowfullscreen loading="lazy"></iframe>
                 <h3>Computer-Vision Turret (C-RAM)</h3>
-                <p>YOLO-based object tracking with PID-controlled turret</p>
+                <p>Object tracking turret with YOLO, OpenCV, and PID-controlled servos.</p>
             </div>
             <div class="project">
-                <iframe src="https://www.youtube.com/embed/" title="RF Detector Demo" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/zc-Dw4LfCuc?si=qTr7mRndpbpNbgwC" title="RF Detector Demo" allowfullscreen loading="lazy"></iframe>
                 <h3>Drone RF Signal Detector</h3>
-                <p>SDR-based drone detection using signal analysis</p>
+                <p>SDR-based detector that picks up drone control signals across multiple frequency bands.</p>
             </div>
         </div>
 
         <a href="projects.html" class="cta">View All Projects</a>
-    </main>
+    </div>
+    </section>
 
-    <footer>
-        <a href="mailto:corbinpro@example.com">email</a> &nbsp;|&nbsp;
-        <a href="https://linkedin.com/in/">LinkedIn</a> &nbsp;|&nbsp;
-        <button id="theme-toggle">dark mode</button>
+    <div class="section-gap"></div>
+
+    <section class="content-section">
+    <div class="section-inner">
+        <h2>My Journey</h2>
+        <div class="timeline" role="list" aria-label="Career timeline">
+            <div class="timeline-line"></div>
+
+            <div class="timeline-entry right">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="timeline-date">Now - Next Step</span>
+                    <h3>Bridging Mechanical and Digital</h3>
+                    <p>Graduating with a B.S. in Software Engineering and a certificate in Embedded Systems. The goal is to be an engineer who understands both mechanical and digital systems. The limitations I once hit in automation and software are now the problems I solve.</p>
+                    <div class="timeline-skills">
+                        <a href="projects.html?tag=Embedded" class="tag">Embedded</a>
+                        <a href="projects.html?tag=Python" class="tag">Python</a>
+                        <a href="projects.html?tag=Automation" class="tag">Automation</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-entry left">
+                <div class="timeline-dot"></div>
+                <div class="timeline-img">
+                    <img src="images/timeline-10.webp" alt="Embedded systems project" width="300" height="400" loading="lazy">
+                </div>
+                <div class="timeline-content">
+                    <span class="timeline-date">2022 - Present</span>
+                    <h3>Embedded Systems</h3>
+                    <p>In college, embedded systems clicked. Years of working with my hands combined with software made it a natural fit. Started building computer vision turrets, RF signal detectors, and RFID research tools.</p>
+                    <div class="timeline-skills">
+                        <a href="projects.html?tag=C" class="tag">C/C++</a>
+                        <a href="projects.html?tag=STM32" class="tag">STM32</a>
+                        <a href="projects.html?tag=Embedded" class="tag">FreeRTOS</a>
+                        <a href="projects.html?tag=Computer Vision" class="tag">Computer Vision</a>
+                        <a href="projects.html?tag=RF" class="tag">RF/SDR</a>
+                        <a href="projects.html?tag=Linux" class="tag">Linux</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-entry right">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="timeline-date">Age 21 - 2021</span>
+                    <h3>College: Software Engineering</h3>
+                    <p>Started at BYU-Idaho studying Software Engineering. Learned to code the systems I always wanted to build. Data structures, algorithms, and system-level programming opened up new ways to solve the mechanical problems I already understood.</p>
+                    <div class="timeline-skills">
+                        <a href="projects.html?tag=Python" class="tag">Python</a>
+                        <a href="projects.html?tag=C" class="tag">C</a>
+                        <a href="projects.html?tag=Web" class="tag">Web</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-entry left">
+                <div class="timeline-dot"></div>
+                <div class="timeline-img">
+                    <img src="images/timeline-09.webp" alt="Reverse engineering in the shop" width="300" height="400" loading="lazy">
+                </div>
+                <div class="timeline-content">
+                    <span class="timeline-date">Age 18 - 2018</span>
+                    <h3>Machinist</h3>
+                    <p>Started running CNC mills and lathes, making precision parts to +/-0.001" tolerances. Learned G-code, tool path optimization, and quality inspection. This is where I started hitting software limitations in manufacturing firsthand.</p>
+                    <div class="timeline-skills">
+                        <a href="projects.html?tag=CNC" class="tag">CNC</a>
+                        <a href="projects.html?tag=Automation" class="tag">Automation</a>
+                        <a href="projects.html?tag=CAD" class="tag">CAD</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-entry right">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="timeline-date">Age 14 - 2014</span>
+                    <h3>First Truck and First Job</h3>
+                    <p>Started building my first desert race truck. Got my first job as a mechanic. Learned diagnostics, fabrication, welding, and how to figure things out with limited resources.</p>
+                    <div class="timeline-skills">
+                        <a href="projects.html?tag=CAD" class="tag">CAD</a>
+                    </div>
+                </div>
+                <div class="timeline-img">
+                    <div class="carousel">
+                        <img src="images/timeline-03.webp" alt="First truck" class="carousel-img" width="225" height="400" loading="lazy">
+                        <img src="images/timeline-04.webp" alt="Engine work" class="carousel-img" width="400" height="400" loading="lazy">
+                        <img src="images/timeline-05.webp" alt="Suspension rebuild" class="carousel-img" width="400" height="300" loading="lazy">
+                        <img src="images/timeline-06.webp" alt="Roll cage fabrication" class="carousel-img" width="400" height="300" loading="lazy">
+                        <img src="images/timeline-07.webp" alt="Frame work" class="carousel-img" width="400" height="300" loading="lazy">
+                        <img src="images/timeline-08.webp" alt="Truck in action" class="carousel-img" width="360" height="202" loading="lazy">
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-entry left">
+                <div class="timeline-dot"></div>
+                <div class="timeline-img">
+                    <div class="carousel">
+                        <img src="images/timeline-02.webp" alt="Welding at age 13" class="carousel-img" width="341" height="400" loading="lazy">
+                        <img src="images/timeline-01.webp" alt="Early building projects" class="carousel-img" width="400" height="299" loading="lazy">
+                    </div>
+                </div>
+                <div class="timeline-content">
+                    <span class="timeline-date">Age 10 - 2010</span>
+                    <h3>Fabrication and engines</h3>
+                    <p>Started building drift-trikes, go-karts, and mini bikes. Learned how engines work by taking them apart and experimenting with power modifications.</p>
+                </div>
+            </div>
+
+            <div class="timeline-entry right">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="timeline-date">The Beginning</span>
+                    <h3>Driven To Innovate</h3>
+                    <p>Always building and creating things. Stealing dad's power tools to work on projects. The drive to understand how things work started before I can remember.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </section>
+
+    <div class="section-gap"></div>
+
+    <section class="content-section">
+    <footer role="contentinfo">
+        <a href="mailto:corbinprobasco@gmail.com">corbinprobasco@gmail.com</a> &nbsp;|&nbsp;
+        <a href="https://www.linkedin.com/in/corbin-probasco" target="_blank" rel="noopener">LinkedIn</a> &nbsp;|&nbsp;
+        <button id="theme-toggle" aria-label="Toggle dark mode">[dark]</button>
+        <p style="margin-top: 0.5rem;">&copy; 2026 Corbin Probasco</p>
     </footer>
+    </section>
+    </div>
 
     <script src="scripts.js"></script>
 </body>

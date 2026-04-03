@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Corbin Probasco</title>
+    <meta name="description" content="Get in touch with Corbin Probasco for job opportunities, project collaboration, or general inquiries.">
+    <link rel="icon" href="images/corbinpro-logo-nav.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to content</a>
+    <nav class="nav-standard" aria-label="Main navigation">
+        <h1><a href="index.html"><img src="images/corbinpro-logo-nav.png" alt="corbinpro logo" class="nav-logo">corbinpro</a></h1>
+        <div class="nav-right">
+            <button id="menu-toggle" aria-label="Menu" aria-expanded="false">&#9776;</button>
+        </div>
+        <ul id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main id="main-content">
+        <h2>Get In Touch</h2>
+        <p class="contact-intro">Have a question or want to work together? Send me a message or reach out directly.</p>
+
+        <div class="contact-layout">
+            <div class="contact-sidebar">
+                <h3>Direct Contact</h3>
+                <p><strong>Email:</strong><br><a href="mailto:corbinprobasco@gmail.com">corbinprobasco@gmail.com</a></p>
+                <p><strong>LinkedIn:</strong><br><a href="https://www.linkedin.com/in/corbin-probasco" target="_blank" rel="noopener">linkedin.com/in/corbin-probasco</a></p>
+                <p><strong>Location:</strong><br>Ogden, Utah</p>
+            </div>
+
+            <form class="contact-form" id="contact-form" action="https://formspree.io/f/mqegdjbv" method="POST" novalidate>
+                <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required minlength="2" placeholder="Your name">
+                <p class="error-msg" id="name-error">Please enter your name (at least 2 characters).</p>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required placeholder="you@example.com">
+                <p class="error-msg" id="email-error">Please enter a valid email address.</p>
+
+                <label for="subject">Subject</label>
+                <select id="subject" name="subject" required>
+                    <option value="">Select a subject...</option>
+                    <option value="general">General Inquiry</option>
+                    <option value="job">Job Opportunity</option>
+                    <option value="collab">Project Collaboration</option>
+                    <option value="other">Other</option>
+                </select>
+                <p class="error-msg" id="subject-error">Please select a subject.</p>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required minlength="10" placeholder="Your message..."></textarea>
+                <p class="error-msg" id="message-error">Please enter a message (at least 10 characters).</p>
+
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </main>
+
+    <footer role="contentinfo">
+        <a href="mailto:corbinprobasco@gmail.com">corbinprobasco@gmail.com</a> &nbsp;|&nbsp;
+        <a href="https://www.linkedin.com/in/corbin-probasco" target="_blank" rel="noopener">LinkedIn</a> &nbsp;|&nbsp;
+        <button id="theme-toggle" aria-label="Toggle dark mode">[dark]</button>
+        <p style="margin-top: 0.5rem;">&copy; 2026 Corbin Probasco</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+    <script src="contact.js"></script>
+</body>
+</html>

@@ -3,199 +3,434 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site Plan — Corbin Probasco Portfolio</title>
+    <title>Site Plan - corbinpro Portfolio</title>
     <link rel="stylesheet" href="site-plan.css">
 </head>
 <body>
+
     <header>
-        <h1>Site Plan</h1>
-        <p>Corbin Probasco — Portfolio Website</p>
-        <p>WDD131 Personal Site Project</p>
+        <div class="logo-banner">
+            <img src="../images/corbinpro.png" alt="corbinpro terminal logo">
+        </div>
+        <h1>Site Plan: corbinpro Portfolio</h1>
+        <p>Corbin Probasco | WDD131 Personal Site</p>
     </header>
 
-    <h2>Purpose</h2>
-    <p>
-        This portfolio serves as a professional showcase for my embedded systems
-        and software engineering projects through video demos, a downloadable resume,
-        and a contact form. The goal is to demonstrate technical competence through
-        tangible project outcomes and provide hiring managers with a clear picture
-        of my skills and experience.
-    </p>
+    <main>
 
-    <h2>Audience</h2>
-    <ul>
-        <li>Hiring managers and recruiters in embedded systems and defense</li>
-        <li>Students and co-workers </li>
-        
-    <h2>Color Scheme</h2>
-    <div class="color-swatches">
-        <div class="swatch">
-            <div class="color-block" style="background: #F5F5F5; border-bottom: 1px solid #E1E4E8;"></div>
-            <div class="color-label">Primary BG<br>#F5F5F5</div>
-        </div>
-        <div class="swatch">
-            <div class="color-block" style="background: #FFFFFF; border-bottom: 1px solid #E1E4E8;"></div>
-            <div class="color-label">Secondary BG<br>#FFFFFF</div>
-        </div>
-        <div class="swatch">
-            <div class="color-block" style="background: #1A1A2E;"></div>
-            <div class="color-label">Primary Text<br>#1A1A2E</div>
-        </div>
-        <div class="swatch">
-            <div class="color-block" style="background: #6C757D;"></div>
-            <div class="color-label">Secondary Text<br>#6C757D</div>
-        </div>
-        <div class="swatch">
-            <div class="color-block" style="background: #4E9A06;"></div>
-            <div class="color-label">Accent<br>#4E9A06</div>
-        </div>
-        <div class="swatch">
-            <div class="color-block" style="background: #73D216;"></div>
-            <div class="color-label">Accent Hover<br>#73D216</div>
-        </div>
-        <div class="swatch">
-            <div class="color-block" style="background: #0D1117;"></div>
-            <div class="color-label">Dark Accent<br>#0D1117</div>
-        </div>
-        <div class="swatch">
-            <div class="color-block" style="background: #E1E4E8;"></div>
-            <div class="color-label">Border<br>#E1E4E8</div>
-        </div>
-    </div>
-    <ul>
-        <li>Primary BG — #F5F5F5 — Page background</li>
-        <li>Secondary BG — #FFFFFF — Sections</li>
-        <li>Primary Text — #1A1A2E — Body text, headings</li>
-        <li>Secondary Text — #6C757D — Captions, meta info</li>
-        <li>Accent — #4E9A06 — Links, buttons, highlights</li>
-        <li>Accent Hover — #73D216 — Hover states</li>
-        <li>Dark Accent — #0D1117 — Header/footer, code blocks</li>
-        <li>Border — #E1E4E8 — Dividers, borders</li>
-    </ul>
+        <!-- PURPOSE -->
+        <section id="purpose">
+            <h2>Purpose</h2>
+            <p>
+                This portfolio website serves as a professional showcase for Corbin Probasco, a Software Engineering
+                student and Junior Developer specializing in embedded systems and computer vision. The site presents
+                completed projects through video demonstrations, provides a downloadable resume, and offers a way for
+                recruiters, hiring managers, and collaborators to make contact. The goal is to demonstrate technical
+                competence through tangible project outcomes rather than just listing skills.
+            </p>
+        </section>
 
-    <h2>Fonts</h2>
-    <p>
-        The site uses the system <code>monospace</code> font stack exclusively.
-        This matches the XFCE terminal environment and reinforces the terminal-prompt
-        style of the logo. No external fonts are loaded.
-    </p>
-    <ul>
-        <li>h1 — 2em, bold</li>
-        <li>h2 — 1.5em, bold</li>
-        <li>h3 — 1.25em, bold</li>
-        <li>Body — 1em, normal</li>
-        <li>Line-height — 1.6</li>
-    </ul>
+        <!-- AUDIENCE -->
+        <section id="audience">
+            <h2>Target Audience</h2>
+            <p>
+                The primary audience includes software engineering hiring managers, recruiters in the embedded systems
+                and defense technology sectors, and fellow engineering students or open-source collaborators. These
+                visitors are technically literate, value concise presentation, and want to quickly assess project scope
+                and quality. A secondary audience includes BYU-Idaho faculty evaluating coursework. The site's minimal
+                design and monospace typography signal engineering credibility, while video demonstrations let
+                non-technical stakeholders quickly grasp project outcomes.
+            </p>
 
-    <h2>Logo</h2>
-    <img src="../images/corbinpro-small.png" alt="corbinpro small logo">
-    <img src="../images/corbinpro.png" alt="corbinpro terminal logo">
-    <img src="../images/corbinpro-wide.png" alt="corbinpro wide banner">
-    <img src="../images/corbinpro-extra-wide.png" alt="corbinpro extra wide banner">
+            <h3>User Scenarios</h3>
+            <ol>
+                <li>"I'm a recruiter reviewing candidates for an embedded systems role. I want to quickly see what
+                    projects this candidate has built and whether they can demonstrate working hardware/software
+                    integration."</li>
+                <li>"I'm a fellow student looking for collaboration on a drone-related project. I want to see what
+                    tools and platforms Corbin has experience with and find a way to reach out."</li>
+                <li>"I'm a hiring manager at a defense contractor. I saw Corbin's LinkedIn and want to see video
+                    evidence of his computer vision turret and RF signal detector projects before scheduling an
+                    interview."</li>
+            </ol>
+        </section>
 
-    <h2>Navigation</h2>
-    <p>
-        Persistent top navigation bar across all pages. Logo on the left,
-        nav links on the right.
-    </p>
-    <p>Home — Projects — Resume — Contact</p>
-    <p>Footer on all pages includes email link and LinkedIn profile link.</p>
+        <!-- COLOR SCHEME -->
+        <section id="colors">
+            <h2>Color Scheme</h2>
 
-    <h2>Dynamic Elements (JavaScript)</h2>
-    <p>
-        Four JavaScript features covering required concepts: multiple functions,
-        DOM interaction, conditionals, objects, arrays, and array methods.
-    </p>
+            <h3>Light Mode (Default)</h3>
+            <p>Mostly white, clean, professional. Amber and coral accents pulled from a terminal system monitor.</p>
+            <div class="color-palette">
+                <div class="color-swatch" style="background-color: #FFFFFF;">
+                    <span class="swatch-label">#FFFFFF Primary BG</span>
+                </div>
+                <div class="color-swatch" style="background-color: #F8F8F8;">
+                    <span class="swatch-label">#F8F8F8 Secondary BG</span>
+                </div>
+                <div class="color-swatch" style="background-color: #2C2C2C; color: #FFFFFF;">
+                    <span class="swatch-label" style="background: rgba(0,0,0,0.5); color: #FFF;">#2C2C2C Primary Text</span>
+                </div>
+                <div class="color-swatch" style="background-color: #6B7280; color: #FFFFFF;">
+                    <span class="swatch-label" style="background: rgba(0,0,0,0.5); color: #FFF;">#6B7280 Secondary Text</span>
+                </div>
+                <div class="color-swatch" style="background-color: #C9A835;">
+                    <span class="swatch-label">#C9A835 Accent Amber</span>
+                </div>
+                <div class="color-swatch" style="background-color: #CC6666; color: #FFFFFF;">
+                    <span class="swatch-label" style="background: rgba(0,0,0,0.4); color: #FFF;">#CC6666 Accent Coral</span>
+                </div>
+                <div class="color-swatch" style="background-color: #1E1E1E; color: #FFFFFF;">
+                    <span class="swatch-label" style="background: rgba(255,255,255,0.15); color: #FFF;">#1E1E1E Dark/Banner</span>
+                </div>
+                <div class="color-swatch" style="background-color: #E5E7EB;">
+                    <span class="swatch-label">#E5E7EB Border</span>
+                </div>
+                <div class="color-swatch" style="background-color: #4E9A06; color: #FFFFFF;">
+                    <span class="swatch-label" style="background: rgba(0,0,0,0.4); color: #FFF;">#4E9A06 Terminal Green</span>
+                </div>
+            </div>
+            <p><em>Terminal green is used only in the logo banner and the typing animation. Amber is the primary accent for links, buttons, and borders. Coral is used for hover states and secondary highlights.</em></p>
 
-    <h3>1. Project Filter (Projects page)</h3>
-    <p>
-        An array of project objects with category properties. Uses
-        <code>filter()</code> to show projects by category (All, Embedded, CV,
-        Automation). Dynamically renders filtered results to the DOM.
-    </p>
+            <h3>Dark Mode</h3>
+            <p>Warm olive-black tones sampled from a btop terminal monitor screenshot. Amber and coral accents remain the same for brand consistency.</p>
+            <div class="color-palette">
+                <div class="color-swatch" style="background-color: #1A1A14; color: #D4CFC4;">
+                    <span class="swatch-label" style="background: rgba(255,255,255,0.1); color: #D4CFC4;">#1A1A14 Primary BG</span>
+                </div>
+                <div class="color-swatch" style="background-color: #252520; color: #D4CFC4;">
+                    <span class="swatch-label" style="background: rgba(255,255,255,0.1); color: #D4CFC4;">#252520 Secondary BG</span>
+                </div>
+                <div class="color-swatch" style="background-color: #D4CFC4;">
+                    <span class="swatch-label">#D4CFC4 Primary Text</span>
+                </div>
+                <div class="color-swatch" style="background-color: #8A8575; color: #FFFFFF;">
+                    <span class="swatch-label" style="background: rgba(0,0,0,0.4); color: #FFF;">#8A8575 Secondary Text</span>
+                </div>
+                <div class="color-swatch" style="background-color: #C9A835;">
+                    <span class="swatch-label">#C9A835 Accent Amber</span>
+                </div>
+                <div class="color-swatch" style="background-color: #CC6666; color: #FFFFFF;">
+                    <span class="swatch-label" style="background: rgba(0,0,0,0.4); color: #FFF;">#CC6666 Accent Coral</span>
+                </div>
+                <div class="color-swatch" style="background-color: #0F0F0A; color: #D4CFC4;">
+                    <span class="swatch-label" style="background: rgba(255,255,255,0.1); color: #D4CFC4;">#0F0F0A Dark/Banner</span>
+                </div>
+                <div class="color-swatch" style="background-color: #3A3A30; color: #D4CFC4;">
+                    <span class="swatch-label" style="background: rgba(255,255,255,0.1); color: #D4CFC4;">#3A3A30 Border</span>
+                </div>
+                <div class="color-swatch" style="background-color: #4E9A06; color: #FFFFFF;">
+                    <span class="swatch-label" style="background: rgba(0,0,0,0.4); color: #FFF;">#4E9A06 Terminal Green</span>
+                </div>
+            </div>
+        </section>
 
-    <h3>2. Contact Form Validation (Contact page)</h3>
-    <p>
-        <code>validateField()</code> and <code>handleSubmit()</code> functions
-        with event listeners. Uses conditionals to check required fields and
-        display DOM error messages.
-    </p>
+        <!-- TYPOGRAPHY -->
+        <section id="typography">
+            <h2>Typography</h2>
+            <p>Font family: <code>monospace</code> (system default, matches XFCE sans-mono and the terminal-style logo).</p>
+            <div class="font-samples">
+                <div class="font-sample">
+                    <span>h1 - 2em, bold, line-height 1.2</span>
+                    <div style="font-size: 2em; font-weight: bold; line-height: 1.2;">Corbin Probasco</div>
+                </div>
+                <div class="font-sample">
+                    <span>h2 - 1.5em, bold, line-height 1.2</span>
+                    <div style="font-size: 1.5em; font-weight: bold; line-height: 1.2;">Projects</div>
+                </div>
+                <div class="font-sample">
+                    <span>h3 - 1.25em, bold, line-height 1.2</span>
+                    <div style="font-size: 1.25em; font-weight: bold; line-height: 1.2;">Drone RF Signal Detector</div>
+                </div>
+                <div class="font-sample">
+                    <span>Body - 1em, regular, line-height 1.6</span>
+                    <div style="font-size: 1em; line-height: 1.6;">Building embedded systems that bridge hardware and software.</div>
+                </div>
+                <div class="font-sample">
+                    <span>Navigation - 0.9em, regular</span>
+                    <div style="font-size: 0.9em;">Home &nbsp;|&nbsp; Projects &nbsp;|&nbsp; Resume &nbsp;|&nbsp; Contact</div>
+                </div>
+            </div>
+        </section>
 
-    <h3>3. Theme Toggle (All pages)</h3>
-    <p>
-        Light/dark mode toggle using CSS custom properties. Stores preference in
-        <code>localStorage</code>. Uses an object for theme configuration
-        (colors, icon states).
-    </p>
+        <!-- LOGO -->
+        <section id="logo">
+            <h2>Logo</h2>
+            <div class="logo-banner">
+                <img src="../images/corbinpro.png" alt="corbinpro terminal logo">
+            </div>
+            <p>
+                Terminal-style logo representing the developer's Linux-first workflow. Green monospace text on
+                black background mimics a bash prompt, reinforcing the engineering identity. Displayed as a
+                full-width banner on the home page dark strip.
+            </p>
+            <div class="photo-placeholder">[New logo will be provided - placeholder in use]</div>
+        </section>
 
-    <h3>4. Typing Animation (Home hero)</h3>
-    <p>
-        An array of role strings ("Embedded Engineer", "Software Developer", etc.)
-        cycled with <code>setInterval</code>. Modifies DOM text content to create
-        a typewriter effect in the hero subtitle.
-    </p>
+        <!-- NAVIGATION / SITE MAP -->
+        <section id="navigation">
+            <h2>Navigation &amp; Site Map</h2>
+            <div class="sitemap">
+                <p><strong>Home</strong> &mdash; <strong>Projects</strong> &mdash; <strong>Resume</strong> &mdash; <strong>Contact</strong></p>
+            </div>
+            <p>All pages share a top navigation bar with the site name in an <code>&lt;h1&gt;</code> element for accessibility and SEO. On mobile, navigation collapses into a hamburger menu. On desktop (min-width: 768px), links display horizontally. Every page has a footer with email, LinkedIn, and copyright.</p>
+        </section>
 
-    <h2>Page Content</h2>
+        <!-- DYNAMIC ELEMENTS -->
+        <section id="dynamic">
+            <h2>Dynamic Elements (JavaScript)</h2>
 
-    <h3>Home</h3>
-    <ul>
-        <li>Hero section: logo, name, typing subtitle animation, tagline</li>
-        <li>Intro paragraph (3 sentences about embedded systems background)</li>
-        <li>Two featured project video embeds:
-            <ul>
-                <li>Computer-Vision Turret (C-RAM)</li>
-                <li>Drone RF Signal Detector</li>
-            </ul>
-        </li>
-        <li>"View All Projects" button linking to Projects page</li>
-    </ul>
+            <div class="js-feature">
+                <h4>1. Project Filter System <span style="color: #6B7280;">(Projects page)</span></h4>
+                <p>An array of project objects, each with: <code>name</code>, <code>category</code>, <code>description</code>, <code>videoUrl</code>, <code>technologies[]</code>.</p>
+                <ul>
+                    <li>Filter buttons rendered from a categories array using <code>forEach()</code></li>
+                    <li><code>Array.filter()</code> to show/hide projects by category</li>
+                    <li><code>Array.map()</code> or <code>forEach()</code> to render project cards into the DOM</li>
+                    <li>Conditional branching: check active filter, check if category matches</li>
+                    <li>Mobile: filter buttons stack vertically; Desktop: horizontal row</li>
+                </ul>
+                <p><strong>Covers:</strong> objects, arrays, <code>forEach</code>, <code>filter</code>, <code>map</code>, DOM interaction, conditionals</p>
+            </div>
 
-    <h3>Projects</h3>
-    <ul>
-        <li>Filter buttons: All | Embedded | CV | Automation</li>
-        <li>4 project cards in responsive grid:</li>
-    </ul>
-    <ol>
-        <li><strong>Drone RF Signal Detector</strong> — SDR-based drone detection using signal analysis</li>
-        <li><strong>Computer-Vision Turret (C-RAM)</strong> — YOLO-based object tracking with PID-controlled turret</li>
-        <li><strong>RFID Authentication Research Device</strong> — Embedded RFID security research platform</li>
-        <li><strong>Automatic G-Code Editor</strong> — Automated CNC toolpath optimization</li>
-    </ol>
-    <p>Each card includes: YouTube embed, description, and tech tags.</p>
+            <div class="js-feature">
+                <h4>2. Contact Form Validation <span style="color: #6B7280;">(Contact page)</span></h4>
+                <p>HTML5 validation first: <code>required</code>, <code>type="email"</code>, <code>minlength</code>, <code>pattern</code> attributes on inputs.</p>
+                <ul>
+                    <li>JS enhancement: <code>validateField(field)</code> and <code>handleSubmit(event)</code> functions</li>
+                    <li>Select form elements, listen for <code>submit</code> and <code>input</code> events</li>
+                    <li>Conditional branching to check email format, required fields, message length</li>
+                    <li>Modify DOM to show/hide custom error messages below fields</li>
+                </ul>
+                <p><strong>Covers:</strong> multiple functions, event listeners, DOM selection/modification, conditionals</p>
+            </div>
 
-    <h3>Resume</h3>
-    <ul>
-        <li>Formatted resume sections: Education, Skills (by category), Experience, Projects</li>
-        <li>Download PDF button</li>
-    </ul>
+            <div class="js-feature">
+                <h4>3. Typing Animation <span style="color: #6B7280;">(Home page hero)</span></h4>
+                <p>Array of role strings cycled with a typewriter effect:</p>
+                <ul>
+                    <li>Roles: <code>["Embedded Systems Engineer", "Junior Developer", "Problem Solver", "CNC Machinist"]</code></li>
+                    <li><code>setInterval</code> / <code>setTimeout</code> for character-by-character typing</li>
+                    <li>Modify DOM <code>textContent</code> of the subtitle element</li>
+                    <li>Terminal green (<code>#4E9A06</code>) text color with blinking cursor</li>
+                </ul>
+                <p><strong>Covers:</strong> arrays, DOM interaction, functions, conditionals (check string index)</p>
+            </div>
 
-    <h3>Contact</h3>
-    <ul>
-        <li>Form fields: Name, Email, Subject (dropdown), Message, Submit button</li>
-        <li>Sidebar with direct contact info (email, LinkedIn)</li>
-    </ul>
+            <div class="js-feature">
+                <h4>4. Dark Mode Toggle <span style="color: #6B7280;">(All pages)</span></h4>
+                <p>Toggle button in the nav bar swaps CSS custom properties between light and dark theme objects.</p>
+                <ul>
+                    <li>Two theme objects (light and dark) with CSS variable key-value pairs</li>
+                    <li><code>Object.entries(theme).forEach()</code> to apply properties to <code>document.documentElement</code></li>
+                    <li>Stores preference in <code>localStorage</code>, reads on page load</li>
+                    <li>Conditional: check if saved preference exists, apply accordingly</li>
+                </ul>
+                <p><strong>Implementation:</strong></p>
+<pre><code>const themes = {
+  light: {
+    '--bg-primary': '#FFFFFF',
+    '--bg-secondary': '#F8F8F8',
+    '--text-primary': '#2C2C2C',
+    '--text-secondary': '#6B7280',
+    '--accent-primary': '#C9A835',
+    '--accent-secondary': '#CC6666',
+    '--bg-dark': '#1E1E1E',
+    '--border': '#E5E7EB'
+  },
+  dark: {
+    '--bg-primary': '#1A1A14',
+    '--bg-secondary': '#252520',
+    '--text-primary': '#D4CFC4',
+    '--text-secondary': '#8A8575',
+    '--accent-primary': '#C9A835',
+    '--accent-secondary': '#CC6666',
+    '--bg-dark': '#0F0F0A',
+    '--border': '#3A3A30'
+  }
+};
 
-    <h2>Wireframes</h2>
+function applyTheme(themeName) {
+  const theme = themes[themeName];
+  Object.entries(theme).forEach(([prop, value]) =&gt; {
+    document.documentElement.style.setProperty(prop, value);
+  });
+  localStorage.setItem('theme', themeName);
+}
 
-    <h3>Home Page</h3>
-    <img src="../images/home.png" alt="Home page wireframe">
+const saved = localStorage.getItem('theme');
+applyTheme(saved ? saved : 'light');</code></pre>
+                <p><strong>Covers:</strong> objects, arrays, <code>Object.entries</code>, <code>forEach</code>, DOM interaction, event listener, conditionals</p>
+            </div>
+        </section>
 
-    <h3>Projects Page</h3>
-    <img src="../images/projects.png" alt="Projects page wireframe">
+        <!-- CONTENT -->
+        <section id="content">
+            <h2>Page Content</h2>
 
-    <h3>Resume Page</h3>
-    <img src="../images/resume.png" alt="Resume page wireframe">
+            <!-- HOME -->
+            <div class="page-content">
+                <h4>Home Page</h4>
+                <p><strong>Hero Section:</strong></p>
+                <ul>
+                    <li>Full-width dark banner (<code>#1E1E1E</code>) with logo placeholder</li>
+                    <li><code>&lt;h1&gt;Corbin Probasco&lt;/h1&gt;</code></li>
+                    <li>Typing animation subtitle in terminal green: <code>&gt; Embedded Systems Engineer_</code></li>
+                    <li>Tagline: "Software engineer building at the intersection of hardware and code."</li>
+                </ul>
 
-    <h3>Contact Page</h3>
-    <img src="../images/contact.png" alt="Contact page wireframe">
+                <p><strong>Introduction:</strong></p>
+                <p>"I'm a Software Engineering student at BYU-Idaho with a certificate in Embedded Systems, currently working as a Junior Developer at Meritus360. My projects span drone detection, computer vision targeting systems, and industrial automation. I bring 6+ years of precision machining experience to every engineering problem."</p>
+                <div class="photo-placeholder">[Professional headshot placeholder - near intro text]</div>
 
-    <h2>Photo / Media Placeholders</h2>
-    <ul>
-        <li>Home — Hero image — Professional headshot or workbench candid</li>
-        <li>Home — Featured videos — CV turret tracking demo, RF detector spectrum display</li>
-        <li>Projects — Card thumbnails — SDR setup, turret mechanism, RFID prototype, CNC machine</li>
-        <li>Resume — Headshot — Professional headshot</li>
-    </ul>
+                <p><strong>Featured Projects:</strong> Two YouTube video embeds (placeholder URLs)</p>
+                <ul>
+                    <li><strong>Computer-Vision Turret (Drone C-RAM)</strong> - "A real-time object tracking turret using YOLO and OpenCV with PID-controlled servos."</li>
+                    <li><strong>Drone RF Signal Detector</strong> - "Passive RF detection system for identifying drone control frequencies using SDR hardware."</li>
+                </ul>
+
+                <p><strong>Call to Action:</strong> "View All Projects" button (amber background, links to projects page)</p>
+            </div>
+
+            <!-- PROJECTS -->
+            <div class="page-content">
+                <h4>Projects Page</h4>
+                <p><strong>Filter Buttons:</strong> All | Embedded Systems | Computer Vision | Automation</p>
+                <p><em>Mobile: stack vertically. Desktop: horizontal row.</em></p>
+
+                <h4>Project Cards:</h4>
+
+                <p><strong>1. Drone RF Signal Detector</strong> <span class="tag">STM32</span> <span class="tag">C</span> <span class="tag">SDR</span> <span class="tag">Signal Processing</span></p>
+                <p>Multi-band drone signal detector using STM32L4 and AD8317 analog detectors. Scans 433 MHz, 915 MHz, 2.4 GHz, and 5.8 GHz bands with tuned antennas and copper-lined EMI shielding.</p>
+                <p>Video: <code>https://www.youtube.com/embed/VIDEO_ID_PLACEHOLDER</code></p>
+                <div class="photo-placeholder">[Photo: Close-up of detector hardware with antennas]</div>
+
+                <p><strong>2. Computer-Vision Turret (Drone C-RAM)</strong> <span class="tag">Python</span> <span class="tag">YOLO</span> <span class="tag">OpenCV</span> <span class="tag">PID</span> <span class="tag">Raspberry Pi</span></p>
+                <p>Real-time object tracking turret using Raspberry Pi 5, custom YOLO model, and PID-controlled servo motors. Multi-process Linux pipeline achieves &plusmn;1&deg; tracking accuracy.</p>
+                <p>Video: <code>https://www.youtube.com/embed/VIDEO_ID_PLACEHOLDER</code></p>
+                <div class="photo-placeholder">[Photo: Turret mechanism with camera mounted]</div>
+
+                <p><strong>3. RFID Authentication Research Device</strong> <span class="tag">C</span> <span class="tag">Raspberry Pi Pico</span> <span class="tag">RFID</span> <span class="tag">SPI/I2C</span></p>
+                <p>Research tool for studying 13.56 MHz RFID authentication. PN532 module with Raspberry Pi Pico for UID reading, emulation, and security analysis via custom SPI/I2C drivers.</p>
+                <p>Video: <code>https://www.youtube.com/embed/VIDEO_ID_PLACEHOLDER</code></p>
+                <div class="photo-placeholder">[Photo: Breadboard prototype with RFID module]</div>
+
+                <p><strong>4. Automatic G-Code Editor</strong> <span class="tag">Python</span> <span class="tag">CNC</span> <span class="tag">Automation</span></p>
+                <p>Automated CNC G-code generation and editing tool. Validates tool paths and reduces setup time. Adopted by shop owner for daily production use.</p>
+                <p>Video: <code>https://www.youtube.com/embed/VIDEO_ID_PLACEHOLDER</code></p>
+                <div class="photo-placeholder">[Photo: CNC machine or screenshot of tool interface]</div>
+            </div>
+
+            <!-- RESUME -->
+            <div class="page-content">
+                <h4>Resume Page</h4>
+                <div class="photo-placeholder">[Professional headshot placeholder]</div>
+                <p><strong>Location:</strong> Ogden, Utah</p>
+                <p><strong>Download:</strong> "Download PDF Resume" button (amber)</p>
+
+                <p><strong>Education:</strong></p>
+                <ul>
+                    <li>B.S. Software Engineering, BYU-Idaho, Rexburg, ID &mdash; Expected Dec 2026</li>
+                    <li>Certificate, Embedded Systems</li>
+                    <li>GPA: 3.55 / 4.00</li>
+                    <li>Relevant coursework: Real-Time Operating Systems, Microcontrollers, Debugging, Reverse Engineering, Digital Logic, Data Structures, Linux, Serial Communication, Machine Learning</li>
+                </ul>
+
+                <p><strong>Technical Skills:</strong></p>
+                <ul>
+                    <li><strong>Languages:</strong> C, C++, Python, C#, ARM Assembly, Verilog, JavaScript</li>
+                    <li><strong>Embedded &amp; RF:</strong> STM32, Raspberry Pi, ESP32, FreeRTOS, SPI/I2C, Software Defined Radio</li>
+                    <li><strong>Tools &amp; OS:</strong> Linux/Unix, Git, GDB, STM32CubeIDE, Espressif, GCC, .NET, Bash, SSH, 3D Printing, CNC Machine Programming</li>
+                    <li><strong>Engineering:</strong> CAD Design, CNC machining, welding, soldering, logic analyzers</li>
+                    <li><strong>Other:</strong> Computer Vision (YOLO, OpenCV), PID control, PyTorch, Tailscale</li>
+                </ul>
+
+                <p><strong>Experience:</strong></p>
+                <ul>
+                    <li><strong>Junior Developer, Meritus360</strong> (Mesa, AZ &mdash; 2025-Current): Developed AI-based tooling for aerospace manufacturing shops. Worked in a 3-person team delivering production features in C# and Python.</li>
+                    <li><strong>Machinist</strong> (White Rock Machine, Quick Turn Machine, Gem State Machine &mdash; Utah &amp; Idaho, 2018-2019, 2021-2025): Operated and programmed CNC mills and lathes to &plusmn;0.001" tolerances. Interpreted G-code, performed tool setups, collaborated with engineers.</li>
+                </ul>
+
+                <p><strong>Projects:</strong> Condensed list linking to the Projects page.</p>
+            </div>
+
+            <!-- CONTACT -->
+            <div class="page-content">
+                <h4>Contact Page</h4>
+                <p><strong>Intro:</strong> "Interested in collaborating or have a position that might be a good fit? Reach out using the form below or connect with me directly."</p>
+
+                <p><strong>Form Fields (with HTML5 validation):</strong></p>
+                <ul>
+                    <li>Name: <code>&lt;input type="text" required minlength="2"&gt;</code></li>
+                    <li>Email: <code>&lt;input type="email" required&gt;</code></li>
+                    <li>Subject: <code>&lt;select required&gt;</code> (General Inquiry, Job Opportunity, Project Collaboration, Other)</li>
+                    <li>Message: <code>&lt;textarea required minlength="10"&gt;</code></li>
+                    <li>Submit button (amber)</li>
+                </ul>
+                <p>JavaScript validation layered on top of HTML5 for custom error messages.</p>
+
+                <p><strong>Direct Contact Sidebar:</strong></p>
+                <ul>
+                    <li>Email: corbinprobasco@gmail.com</li>
+                    <li>LinkedIn: linkedin.com/in/corbin-probasco</li>
+                    <li>Location: Ogden, Utah</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- WIREFRAMES -->
+        <section id="wireframes">
+            <h2>Wireframes</h2>
+            <p>Mobile-first design. Default layout targets small screens. Media queries at <code>min-width: 768px</code> adapt to widescreen.</p>
+
+            <h3>Mobile Wireframe</h3>
+            <img src="../images/mobile.png" alt="Mobile wireframe for all pages">
+
+            <h3>Home Page</h3>
+            <img src="../images/home.png" alt="Home page wireframe">
+
+            <h3>Projects Page</h3>
+            <img src="../images/projects.png" alt="Projects page wireframe">
+
+            <h3>Resume Page</h3>
+            <img src="../images/resume.png" alt="Resume page wireframe">
+
+            <h3>Contact Page</h3>
+            <img src="../images/contact.png" alt="Contact page wireframe">
+        </section>
+
+        <!-- CSS ARCHITECTURE -->
+        <section id="css-architecture">
+            <h2>CSS Architecture (Mobile-First)</h2>
+            <p>All default styles target mobile screens. Media queries use <code>min-width</code> to scale up to widescreen.</p>
+<pre><code>/* === BASE (MOBILE) === */
+body { font-family: monospace; color: var(--text-primary); background: var(--bg-primary); }
+.nav-links { display: none; }
+.hamburger { display: block; }
+.filter-buttons { display: flex; flex-direction: column; gap: 0.5rem; }
+.project-grid { display: grid; grid-template-columns: 1fr; gap: 1.5rem; }
+.contact-layout { display: block; }
+
+/* === TABLET+ (min-width: 768px) === */
+@media (min-width: 768px) {
+  .nav-links { display: flex; }
+  .hamburger { display: none; }
+  .filter-buttons { flex-direction: row; }
+  .project-grid { grid-template-columns: 1fr 1fr; }
+  .contact-layout { display: grid; grid-template-columns: 1fr 280px; gap: 2rem; }
+}
+
+/* === DESKTOP (min-width: 1024px) === */
+@media (min-width: 1024px) {
+  main { max-width: 960px; margin: 0 auto; }
+}</code></pre>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Corbin Probasco | WDD131 | 2026</p>
+    </footer>
 
 </body>
 </html>
