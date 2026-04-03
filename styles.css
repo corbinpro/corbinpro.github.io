@@ -16,8 +16,10 @@
 [data-theme="dark"] {
     --bg: #1A1A14;
     --bg2: #252520;
-    --text: #D4CFC4;
-    --text2: #8A8575;
+    --text: #E0DBD0;
+    --text2: #A8A090;
+    --accent: #C9A835;
+    --accent2: #CC6666;
     --border: #3A3A30;
 }
 
@@ -234,7 +236,7 @@ h3 { font-size: 1.25em; margin-bottom: 0.75rem; }
 
 .content-section { background: var(--bg); }
 
-.section-gap { height: 25vh; background: transparent; }
+.section-gap { height: 40vh; background: transparent; }
 
 .section-inner { padding: 1.5rem 1rem; }
 
@@ -683,7 +685,9 @@ footer a:hover { color: var(--accent2); }
     color: var(--text2);
     font-family: monospace;
     font-size: 0.85em;
-    padding: 0.2em 0.6em;
+    padding: 0.5em 0.8em;
+    min-height: 44px;
+    min-width: 44px;
     cursor: pointer;
     border-radius: 3px;
 }
