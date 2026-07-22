@@ -48,6 +48,30 @@ var projects = [
         repo: "https://github.com/corbinpro/cpu_monitor"
     },
     {
+        title: "PID Lever",
+        description: "Self-balancing lever test rig on an STM32L476RG (Nucleo). Closed-loop PID (P+I+D) with EMA-filtered ADC feedback, slew-rate limiting, and deadband control drives a BTS7960 H-bridge motor at 500 Hz.",
+        tags: ["Embedded", "PID", "STM32", "C"],
+        video: null,
+        image: "images/pid-lever.webp",
+        repo: "https://github.com/corbinpro/PID_Lever"
+    },
+    {
+        title: "NOAA APT Satellite Interception (HackRF)",
+        description: "Intercepted NOAA weather satellite APT transmissions with a HackRF One and a half-wave dipole antenna I designed and built for 137 MHz. Tracked passes in Gpredict and decoded the downlinked images with SatDump.",
+        tags: ["RF", "SDR", "HackRF", "Signal Processing", "Antenna Design"],
+        video: null,
+        image: null,
+        images: [
+            "images/noaa-antenna-closeup.webp",
+            "images/noaa-antenna-setup.webp",
+            "images/noaa-rig-laptop.webp",
+            "images/noaa-gpredict-tracking.webp",
+            "images/noaa-gqrx-waterfall.webp",
+            "images/noaa-apt-decoded.webp"
+        ],
+        repo: null
+    },
+    {
         title: "Embedded Toolkit Script",
         description: "Bash script that sets up a fresh Linux machine for embedded development. Installs 60+ packages, configures Neovim/LazyVim, tmux, ranger, btop with Gruvbox theming, and XFCE keybindings.",
         tags: ["Tools", "Automation", "Bash", "Linux", "Neovim", "DevOps"],
@@ -122,6 +146,15 @@ function renderProjects(tag) {
             mediaHtml = '<iframe src="' + p.video + '" title="' + p.title + '" allowfullscreen loading="lazy"></iframe>';
         } else if (p.image) {
             mediaHtml = '<img src="' + p.image + '" alt="' + p.title + '" class="project-img">';
+        } else if (p.images) {
+            mediaHtml = '<div class="photo-strip">';
+            p.images.forEach(function (src) {
+                var thumb = src.replace(".webp", "-thumb.webp");
+                mediaHtml += '<a href="' + src + '" target="_blank" rel="noopener">';
+                mediaHtml += '<img src="' + thumb + '" alt="' + p.title + '" loading="lazy">';
+                mediaHtml += '</a>';
+            });
+            mediaHtml += '</div>';
         }
 
         var repoHtml = "";

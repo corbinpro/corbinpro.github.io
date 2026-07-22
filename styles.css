@@ -249,12 +249,20 @@ main { padding: 4rem 1rem; }
 /* === FEATURED PROJECTS === */
 .projects {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 1.5rem;
     margin-bottom: 2rem;
+    overflow-x: auto;
+    padding-bottom: 0.5rem;
+    scroll-snap-type: x proximity;
+    -webkit-overflow-scrolling: touch;
 }
 
-.project { flex: 1; }
+.project {
+    flex: 0 0 82%;
+    max-width: 360px;
+    scroll-snap-align: start;
+}
 
 .project iframe {
     width: 100%;
@@ -263,6 +271,38 @@ main { padding: 4rem 1rem; }
     border-radius: 4px;
     background: var(--bg2);
 }
+
+.project img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    display: block;
+}
+
+.featured-carousel {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.featured-carousel .fc-img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: none;
+    border-radius: 0;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.featured-carousel .fc-img.active { opacity: 1; }
 
 .project h3 { margin-top: 0.5rem; font-size: 1.1em; }
 .project p { color: var(--text2); font-size: 0.85em; }
@@ -360,6 +400,30 @@ a.tag:hover { background: var(--accent2); color: #FFFFFF; }
     border-radius: 4px;
     border: 1px solid var(--border);
     display: block;
+}
+
+.photo-strip {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0.5rem;
+}
+
+.photo-strip img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 4px;
+    border: 1px solid var(--border);
+    display: block;
+}
+
+@media (max-width: 600px) {
+    .photo-strip {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .photo-strip img { height: 130px; }
 }
 
 .project-card h3 { margin-top: 0.5rem; font-size: 1.1em; }
@@ -730,7 +794,8 @@ footer a:hover { color: var(--accent2); }
     .hero-name { font-size: 3em; }
     .hero-label { font-size: 1em; }
     main, .section-inner { padding: 2rem; }
-    .projects { flex-direction: row; }
+    .projects { overflow-x: visible; padding-bottom: 0; }
+    .project { flex: 1; max-width: none; }
     .filter-buttons { flex-direction: row; }
     .filter-btn { text-align: center; }
     .project-grid { grid-template-columns: 1fr 1fr; }
