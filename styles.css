@@ -418,12 +418,22 @@ a.tag:hover { background: var(--accent2); color: #FFFFFF; }
     display: block;
 }
 
+.photo-strip.count-2 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+}
+
+.photo-strip.count-2 img { height: 260px; }
+
 @media (max-width: 600px) {
     .photo-strip {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
     }
     .photo-strip img { height: 130px; }
+
+    .photo-strip.count-2 { grid-template-rows: 1fr; }
+    .photo-strip.count-2 img { height: 180px; }
 }
 
 .project-card h3 { margin-top: 0.5rem; font-size: 1.1em; }

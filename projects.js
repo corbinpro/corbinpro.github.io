@@ -27,8 +27,12 @@ var projects = [
         title: "Drone RF Signal Detector",
         description: "Drone signal detector using an STM32L4 and AD8317 analog detectors. Scans 433 MHz, 915 MHz, 2.4 GHz, and 5.8 GHz with tuned antennas and a copper-lined enclosure for EMI shielding.",
         tags: ["Embedded", "RF", "STM32", "C", "SDR", "Signal Processing"],
-        video: "https://www.youtube.com/embed/zc-Dw4LfCuc?si=laozBsnDYqBleJ8R",
+        video: null,
         image: null,
+        images: [
+            "images/rf-detector-enclosure-closed.webp",
+            "images/rf-detector-enclosure-open.webp"
+        ],
         repo: "https://github.com/corbinpro/dradar_proj"
     },
     {
@@ -147,7 +151,7 @@ function renderProjects(tag) {
         } else if (p.image) {
             mediaHtml = '<img src="' + p.image + '" alt="' + p.title + '" class="project-img">';
         } else if (p.images) {
-            mediaHtml = '<div class="photo-strip">';
+            mediaHtml = '<div class="photo-strip count-' + p.images.length + '">';
             p.images.forEach(function (src) {
                 var thumb = src.replace(".webp", "-thumb.webp");
                 mediaHtml += '<a href="' + src + '" target="_blank" rel="noopener">';

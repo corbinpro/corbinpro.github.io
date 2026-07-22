@@ -294,18 +294,19 @@ function initLightbox() {
 
 /* === Featured Carousel (auto-advancing, every 1.5s) === */
 function initFeaturedCarousel() {
-    var carousel = document.querySelector('.featured-carousel');
-    if (!carousel) return;
+    var carousels = document.querySelectorAll('.featured-carousel');
 
-    var images = carousel.querySelectorAll('.fc-img');
-    if (images.length < 2) return;
+    carousels.forEach(function (carousel) {
+        var images = carousel.querySelectorAll('.fc-img');
+        if (images.length < 2) return;
 
-    var index = 0;
-    setInterval(function () {
-        images[index].classList.remove('active');
-        index = (index + 1) % images.length;
-        images[index].classList.add('active');
-    }, 1500);
+        var index = 0;
+        setInterval(function () {
+            images[index].classList.remove('active');
+            index = (index + 1) % images.length;
+            images[index].classList.add('active');
+        }, 1500);
+    });
 }
 
 /* init */
